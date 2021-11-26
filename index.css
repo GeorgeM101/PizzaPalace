@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  background-image: url(/pizza.jpg);
+  background-size: cover;
+  height: 60vh;
+}
+.container-mt-5 {
+  background-color: white;
+  display: flex;
+}
+.text-uppercase {
+  display: flex;
+}
+.nav {
+  list-style: none;
+  text-decoration: none;
+  border: 1px solid white;
+  float: right;
+}
+.nav ul {
+  text-decoration: none;
+}
+
+.nav ul li {
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-between;
+  padding: 20px;
+}
