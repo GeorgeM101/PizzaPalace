@@ -8,6 +8,7 @@
   background-image: url(/pizza.jpg);
   background-size: cover;
   height: 60vh;
+  text-decoration: none;
 }
 .container-mt-5 {
   background-color: white;
