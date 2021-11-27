@@ -17,12 +17,29 @@
 .text-uppercase {
   display: flex;
 }
+.text-white {
+  position: relative;
+  left: 700px;
+  top: -150px;
+  font-size: 100px;
+}
+.text {
+  color: white;
+}
+.first {
+  font-size: 0.5em;
+  color: white;
+}
+h2 {
+  font-size: 0.5em;
+  color: red;
+}
 .nav {
   list-style: none;
   text-decoration: none;
-  border: 1px solid white;
   float: right;
 }
+
 .nav ul {
   text-decoration: none;
 }
@@ -32,4 +49,8 @@
   text-decoration: none;
   justify-content: space-between;
   padding: 20px;
+  color: white;
+}
+.nav ul li:hover {
+  color: blue;
 }
