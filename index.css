@@ -81,3 +81,9 @@ h4 {
   list-style: none;
   font-size: 20px;
 }
+
+/* order */
+.order {
+  background-image: url(./img/together.jpg);
+  background-size: cover;
+}
