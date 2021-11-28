@@ -37,13 +37,14 @@
                 <p>Medium Kshs.800/=</p>
                 <p>Small Kshs.500/=</p>
                 <h6>Choose size</h6>
+                <form action="#"id="formInput"></form>
                 <select name="Size" id="size">
                   <option value="">--Select--</option>
                    <option value="">Small</option>
                    <option value="">Medium</option>
                    <option value="">Large</option>
                </select>
-               <input type="submit"value="submit" onclick="addCart()">
+               <input type="submit"value="submit" onclick="formInput()">
              </div>
              <div class="col md-3">
                  <h4>Margheritta</h4>
@@ -66,6 +67,11 @@
                 <p>Large Kshs.1200/=</p>
                 <p>Medium Kshs.800/=</p>
                 <p>Small Kshs.500/=</p>
+                <select name="Size" id="size">
+                    <option value="">--Select--</option>
+                     <option value="">Small</option>
+                     <option value="">Medium</option>
+                     <option value="">Large</option>
                 <button>Add to cart</button>
              </div>
              <div class="col">
@@ -80,7 +86,7 @@
 
      <!-- extra -->
      <div class="container1 mt-2 p-5">
-         <div class="toppings" id="">
+         <div class="toppings" id="toppings">
              <h4>TOPPINGS</h4>
              <div class="lists">
                  <ul>
@@ -91,7 +97,7 @@
                  </ul>
              </div>
          </div>
-         <div class="crusts">
+         <div class="crusts" id="crusts">
              <h4>Crust</h4>
              <ul>
                  <li>Stuffed Crust</li>
@@ -102,11 +108,18 @@
      </div>
 
     <!-- order -->
+    <div class="container">
+        <h2>Would you like your meal delivered??</h2>
+        <div class="form">
+            <input type="text"id="location" placeholder="Enter your location">
+            <input type="Submit"onclick="location()">
+        </div>
+    </div>
 
          
                 
-                <script src="main.js"></script>
-            </div>
+ <script src="main.js"></script>
+
    
 </body>
 </html>
