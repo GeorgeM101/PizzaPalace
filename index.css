@@ -5,7 +5,7 @@
 }
 
 .container-fluid {
-  background-image: url(/pizza.jpg);
+  background-image: url(./pizza.jpg);
   background-size: cover;
   height: 60vh;
   text-decoration: none;
@@ -54,7 +54,9 @@ h2 {
 .nav ul li:hover {
   color: blue;
 }
-
+.nav ul li a {
+  text-decoration: none;
+}
 /* menu */
 .container {
   /* align-items: center; */
@@ -86,13 +88,20 @@ h4 {
 .container-2 {
   background-image: url(./img/together.jpg);
   background-size: cover;
+  display: flex;
   text-transform: uppercase;
   text-align: center;
   color: red;
-}
-.order {
-  align-items: center;
-  text-align: center;
+  padding: 20px;
   background-color: black;
-  opacity: 0.7;
+  /* opacity: 0.7; */
+  width: 800px;
+  margin-left: 300px;
+}
+.h6 {
+  color: red;
+}
+
+.itemms {
+  display: flex;
 }

@@ -8,10 +8,10 @@
     <title>Test site</title>
 </head>
 <body>
-    <div class="nav nav-bar style-none fw-bold">
+    <div class="nav style-none fw-bold">
         <ul class="text-uppercase">
           <a href=""><li>Home</li></a>  
-          <a href=""><li>Menu</li></a>  
+          <a href="" id="tikka"><li>Menu</li></a>  
           <a href=""><li>Order</li></a>  
            <a href=""><li><i class="fas fa-shopping-cart"></i> </li></a> 
         </ul>
@@ -36,6 +36,14 @@
                 <p>Large Kshs.1200/=</p>
                 <p>Medium Kshs.800/=</p>
                 <p>Small Kshs.500/=</p>
+                <h6>Choose size</h6>
+                <select name="Size" id="size">
+                  <option value="">--Select--</option>
+                   <option value="">Small</option>
+                   <option value="">Medium</option>
+                   <option value="">Large</option>
+               </select>
+               <input type="submit"value="submit" onclick="addCart()">
              </div>
              <div class="col md-3">
                  <h4>Margheritta</h4>
@@ -43,6 +51,14 @@
                 <p>Large Kshs.1200/=</p>
                 <p>Medium Kshs.800/=</p>
                 <p>Small Kshs.500/=</p>
+                <select name="Size" id="size">
+                    <option value="">--Select--</option>
+                     <option value="">Small</option>
+                     <option value="">Medium</option>
+                     <option value="">Large</option>
+                 </select>
+                 <button class="btn-danger">Add to cart
+                 </button>
              </div>
              <div class="col md-3">
                  <h4>Meat</h4>
@@ -50,6 +66,7 @@
                 <p>Large Kshs.1200/=</p>
                 <p>Medium Kshs.800/=</p>
                 <p>Small Kshs.500/=</p>
+                <button>Add to cart</button>
              </div>
              <div class="col">
                  <h4>Pepperoni</h4>
@@ -63,7 +80,7 @@
 
      <!-- extra -->
      <div class="container1 mt-2 p-5">
-         <div class="toppings">
+         <div class="toppings" id="">
              <h4>TOPPINGS</h4>
              <div class="lists">
                  <ul>
@@ -85,43 +102,11 @@
      </div>
 
     <!-- order -->
-    <div class="container-2">
-        <h3>place your order</h3>
-     <div class="order">
-         <br>
-         <br>
-             <select name="" id="">
-                 <h6>Select size</h6>
-                <option value="">Choose</option>
-                 <option value="">Small</option>
-                 <option value="">Medium</option>
-                 <option value="">Large</option>
-             </select>
-             <select name="" id="">
-                 <h6>Select Flavour</h6>
-                <option value="">Choose</option>
-                 <option value="">Chicken Tikka</option>
-                 <option value="">Margheritta</option>
-                 <option value="">Meat</option>
-                 <option value="">Pepperoni</option>
-                </select>
-                <select name="Toppings" id="">
-                    <h6>Select Topping</h6>
-                    <option value="">Choose</option>
-                    <option value="">pepperoni</option>
-                    <option value="">Mushroom</option>
-                    <option value="">Extra Cheese</option>
-                    <option value="">Green pepper</option>
-                </select>
-                <select name="Crust" id="">
-                    <h6>Select Crust</h6>
-                    <option value="">Choose</option>
-                    <option value="">Stuffed crust</option>
-                    <option value="">Thin crust</option>
-                    <option value="">Cheese crust Pizza</option>
-                </select>
-     </div>
-    </div>
+
+         
+                
+                <script src="main.js"></script>
+            </div>
    
 </body>
 </html>
