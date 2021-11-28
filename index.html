@@ -8,7 +8,7 @@
     <title>Test site</title>
 </head>
 <body>
-    <div class="nav style-none fw-bold">
+    <div class="nav nav-bar style-none fw-bold">
         <ul class="text-uppercase">
           <a href=""><li>Home</li></a>  
           <a href="" id="tikka"><li>Menu</li></a>  
@@ -37,14 +37,18 @@
                 <p>Medium Kshs.800/=</p>
                 <p>Small Kshs.500/=</p>
                 <h6>Choose size</h6>
-                <form action="#"id="formInput"></form>
+                <form action="#" id="display">
                 <select name="Size" id="size">
                   <option value="">--Select--</option>
                    <option value="">Small</option>
                    <option value="">Medium</option>
                    <option value="">Large</option>
                </select>
-               <input type="submit"value="submit" onclick="formInput()">
+               <input type="submit"value="submit" onclick="displaySize()">
+               <div id="order">
+
+               </div>
+            </form>
              </div>
              <div class="col md-3">
                  <h4>Margheritta</h4>
@@ -67,11 +71,6 @@
                 <p>Large Kshs.1200/=</p>
                 <p>Medium Kshs.800/=</p>
                 <p>Small Kshs.500/=</p>
-                <select name="Size" id="size">
-                    <option value="">--Select--</option>
-                     <option value="">Small</option>
-                     <option value="">Medium</option>
-                     <option value="">Large</option>
                 <button>Add to cart</button>
              </div>
              <div class="col">
@@ -86,7 +85,7 @@
 
      <!-- extra -->
      <div class="container1 mt-2 p-5">
-         <div class="toppings" id="toppings">
+         <div class="toppings" id="">
              <h4>TOPPINGS</h4>
              <div class="lists">
                  <ul>
@@ -97,7 +96,7 @@
                  </ul>
              </div>
          </div>
-         <div class="crusts" id="crusts">
+         <div class="crusts">
              <h4>Crust</h4>
              <ul>
                  <li>Stuffed Crust</li>
@@ -108,18 +107,20 @@
      </div>
 
     <!-- order -->
-    <div class="container">
-        <h2>Would you like your meal delivered??</h2>
-        <div class="form">
-            <input type="text"id="location" placeholder="Enter your location">
-            <input type="Submit"onclick="location()">
-        </div>
-    </div>
+     <div class="location">
+         <br>
+         <br>
+         <h4>Would you like your meal delivered</h4>
+         <br>
+         <p class="loc">Enter your location</p>
+         <input type="text" name="" id="place">
+         <input type="submit" name="" id="submit"onclick="setPlace())">
+         <br>
+         <br>
+         <br>
+     </div>
+       
+            <script src="main.js"></script>
 
-         
-                
- <script src="main.js"></script>
-
-   
 </body>
 </html>

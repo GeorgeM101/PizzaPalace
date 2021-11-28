@@ -105,3 +105,15 @@ h4 {
 .itemms {
   display: flex;
 }
+
+.location {
+  /* background-image: url(./img/together.jpg); */
+  background-color: black;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+  background-size: cover;
+}
+.loc {
+  color: white;
+}
