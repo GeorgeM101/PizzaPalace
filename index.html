@@ -124,7 +124,7 @@
                <label>Select quantity</label>
                <input type="number" min="1" id="pizzaQuantity" placeholder="Choose quantity" class="form-control">
            </div>
-           <div class="card-footer">
+           <div class="cartBtn">
             <a href="#"  id="AddToCart" class="card-link btn btn-danger">Add to Cart</a>
         </div>
       </div>
@@ -143,19 +143,21 @@
                  
                 <div class="form-group">
                     <label>Your Phone</label>
-                    <input type="text" id="hone" class="form-control">
-                </div>
-                <div class="form-group">
+                    <br>
+                    <input type="text" id="home" placeholder="Tel">
+                     <br>
+                     <br>
                     <label>Location</label>
-                    <textarea id="location" class="form-control" rows="4"></textarea>
+                    <br>
+                    <input id="location" placeholder="location">
                 </div>
             </div>
         </div>
         <div class="card-footer">
-            <a href="#"  id="checkOut" class="card-link btn btn-primary">Check Out</a>
+            <a href="#"  id="checkOut" class=" btn btn-danger">Check Out</a>
         </div>
     </div>
-    <div class="card" id="checkoutBox" style="display: none;  margin-top: 10px;">
+    <div class="card" id="checkoutBox" style="display: none;">
         <div class="card-body">
             <h4>Order Cost</h4>
             <p>Pizza Size : <span id="orderSize"></span></p>
@@ -165,14 +167,11 @@
             <p>Order Cost : Ksh <span id="orderTotal"></span></p>
         </div>
         <div class="card-footer">
-            <a href="#"  id="btnPay" class="card-link btn btn-primary">Pay </a>
+            <a href="#"  id="btnPay" class="btn btn-danger">Pay </a>
         </div>
     </div>
 </div>
 </div>
-
-    <!-- end test -->
-
 
 
 <!-- contacts section -->

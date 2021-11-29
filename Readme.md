@@ -20,6 +20,8 @@ https://georgem101.github.io/PizzaPalace/
 
 Email: georgmboya@gmail.com
 
+#
+
 ## Licence and Copyright Information
 
 MIT Licence Copyright (c) [2021] [George Mboya]​
