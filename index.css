@@ -121,4 +121,5 @@ h4 {
 .icons {
   align-items: center;
   text-align: center;
+  justify-content: space-around;
 }
