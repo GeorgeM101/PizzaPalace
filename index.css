@@ -117,3 +117,8 @@ h4 {
 .loc {
   color: white;
 }
+
+.icons {
+  align-items: center;
+  text-align: center;
+}
