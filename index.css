@@ -140,7 +140,9 @@ option {
   text-align: center;
   align-items: center;
 }
-
+.checkoutBox {
+  align-items: center;
+}
 .icons {
   align-items: center;
   text-align: center;
