@@ -120,6 +120,7 @@ h4 {
   position: relative;
   left: 250px;
 }
+
 .fun {
   background-color: black;
   width: 800px;
@@ -140,7 +141,15 @@ h4 {
 .loc {
   color: white;
 }
-label {
+.card-body {
+  align-items: center;
+  text-align: center;
+  width: 600px;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-left: 400px;
+}
+.dis label {
   color: red;
   text-transform: uppercase;
   margin-top: 30px;
