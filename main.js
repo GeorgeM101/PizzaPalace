@@ -7,7 +7,8 @@
 //     alert("1200")
 // };
 
-$('#AddToCart').on('click', function () {
+$('#AddToCart').on('click', function (event) {
+    event.preventDefault();
     var amount = +$('#pizzaSize').val() + +$('#pizzaCrust').val() + +$('#pizzaTopping').val()
     var finalAmount = amount * +$('#pizzaQuantity').val()
     $('#subTotal').html(finalAmount)
@@ -27,7 +28,7 @@ $('#btnCheckout').on('click', function () {
     var finalAmount = amount * +$('#pizzaQuantity').val()
     var orderAmount = finalAmount
     if($('#flexSwitchCheckChecked').is(':checked')){
-        orderAmount = finalAmount + 250
+        orderAmount = finalAmount + 150
     }
     $('#orderTotal').html(orderAmount)
 })

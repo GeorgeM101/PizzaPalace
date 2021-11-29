@@ -36,17 +36,6 @@
                 <p>Large Kshs.1200/=</p>
                 <p>Medium Kshs.800/=</p>
                 <p>Small Kshs.500/=</p>
-                <h6>Choose size</h6>
-                <form action="#" id="display">
-                <select name="form-control" id="size">
-                  <option value="">--Select--</option>
-                   <option value="600">Small</option>
-                   <option value="800">Medium</option>
-                   <option value="1200">Large</option>
-               </select>
-               <input type="submit"value="submit" onclick="displaySize()">
-               <div id="order">
-               </div>
             </form>
              </div>
              <div class="col md-3">
@@ -55,14 +44,7 @@
                 <p>Large Kshs.1200/=</p>
                 <p>Medium Kshs.800/=</p>
                 <p>Small Kshs.500/=</p>
-                <select name="Size" id="size">
-                    <option value="">--Select--</option>
-                     <option value="600">Small</option>
-                     <option value="800">Medium</option>
-                     <option value="1200">Large</option>
-                 </select>
-                 <button class="btn-danger">Add to cart
-                 </button>
+                
              </div>
              <div class="col md-3">
                  <h4>Meat</h4>
@@ -70,7 +52,6 @@
                 <p>Large Kshs.1200/=</p>
                 <p>Medium Kshs.800/=</p>
                 <p>Small Kshs.500/=</p>
-                <button>Add to cart</button>
              </div>
              <div class="col">
                  <h4>Pepperoni</h4>
@@ -109,70 +90,55 @@
      <div class="location">
          <br>
          <br>
-         <h4>Would you like your meal delivered</h4>
-         <br>
-         <p class="loc">Enter your location</p>
-         <input type="text" name="" id="place">
-         <input type="submit" name="" id="submit"onclick="setPlace())">
-         <br>
-         <br>
-         <br>
-     </div>
-
-
-<!-- test code -->
-
-<div class="container">
-    <h1>Order Pizza Now </h1>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Make your pizza</h5>
-            <div class="form-group">
-                <label>Select Pizza Size</label>
-                <select class="form-control" id="pizzaSize">
-                    <option value="500">Small     at      <b></b>Ksh.500</option>
-                    <option value="800">Medium at <b>Ksh.800</b></option>
-                    <option value="1000">Large at <b>Ksh.1000</b></option>
-                    <option value="1200">Extra Large at <b>Ksh.1200</b></option>
+         <div class="items"></div>
+         <h4>PLACE YOUR ORDER</h4>
+         <div class="fun">
+            <div class="form">
+               <select name="Size" id="pizzaSize">
+                   <option value="">--Select--</option>
+                    <option value="600">Small</option>
+                    <option value="800">Medium</option>
+                    <option value="1200">Large</option>
                 </select>
             </div>
-            <div class="form-group">
-                <label>Pizza Crust</label>
-                <select class="form-control" id="pizzaCrust">
-                    <option value="100">Stuffed @ Ksh.100</option>
-                    <option value="150">Thin crust @ Ksh.150</option>
-                    <option value="200">Cheese Crust @ Ksh.200</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Select Pizza Toppings</label>
-                <select class="form-control" id="pizzaTopping">
-                    <option value="null">--Select--</option>
-                    <option value="200">Extra Beef at Ksh.200</option>
-                    <option value="200">Gheese at Ksh.200</option>
-                    <option value="200">Chicken at Ksh.200</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Select quantity</label>
-                <input type="number" min="1" id="pizzaQuantity" placeholder="Choose quantity?" class="form-control">
-            </div>
+            <div class="form">
+               <label>Pizza Crust</label>
+               <select class="form-control" id="pizzaCrust">
+                   <option value="null">--Select--</option>
+                   <option value="100">Stuffed @ Ksh.100</option>
+                   <option value="150">Thin crust @ Ksh.150</option>
+                   <option value="200">Cheese Crust @ Ksh.200</option>
+               </select>
+           </div>
+           <div class="form">
+               <label>Select Pizza Toppings</label>
+               <select class="form-control" id="pizzaTopping">
+                   <option value="null">--Select--</option>
+                   <option value="200">Pepperoni</option>
+                   <option value="200">Mushroom</option>
+                   <option value="200">Extra cheese</option>
+               </select>
+           </div>
+           <div class="form">
+               <label>Select quantity</label>
+               <input type="number" min="1" id="pizzaQuantity" placeholder="Choose quantity" class="form-control">
+           </div>
+           <div class="card-footer">
+            <a href="#"  id="AddToCart" class="card-link btn btn-danger">Add to Cart</a>
         </div>
-        <div class="card-footer">
-            <a href="#"  id="AddToCart" class="card-link btn btn-primary">Add to Cart</a>
-        </div>
+         </div>
+         
     </div>
-
-
+   
 
 
 
     <div class="card" id="cardCart" style="display: none; margin-top: 10px;">
         <div class="card-body">
-            <p style="color:violet;font-weight: bolder;font-size: 2.5rem;">Sub Total  <b>Ksh <span id="subTotal"></span></b></p>
+            <p style="color:red;font-weight: bolder;font-size: 2.5rem;">Sub Total  <b>Ksh <span id="subTotal"></span></b></p>
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked">
-                <label class="form-check-label" for="flexSwitchCheckChecked" style="color: red;">Do you want your order to be Delivered (Fixed charge of Ksh 1,000)</label>
+                <label class="form-check-label" for="flexSwitchCheckChecked" style="color: red;">Do you want your order to be Delivered </label>
             </div>
             <div id="deliveryDetails" style="display: none;">
                 <div class="form-group">

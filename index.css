@@ -105,9 +105,23 @@ h4 {
 .itemms {
   display: flex;
 }
-
+.form {
+  width: 300px;
+  align-items: center;
+  position: relative;
+  left: 250px;
+}
+.fun {
+  background-color: black;
+  width: 800px;
+  align-items: center;
+  opacity: 0.7;
+  position: relative;
+  left: 300px;
+}
 .location {
-  /* background-image: url(./img/together.jpg); */
+  background-image: url(./img/together.jpg);
+  background-repeat: no-repeat;
   background-color: black;
   align-items: center;
   text-align: center;
@@ -116,6 +130,15 @@ h4 {
 }
 .loc {
   color: white;
+}
+label {
+  color: red;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+option {
+  text-align: center;
+  align-items: center;
 }
 
 .icons {
